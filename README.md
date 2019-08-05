@@ -1,6 +1,6 @@
 # Trakki
 
-**TODO: Add description**
+A little helper for my own plain text time tracking format.
 
 ## Installation
 
