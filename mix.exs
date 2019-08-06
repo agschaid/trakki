@@ -29,7 +29,4 @@ defmodule Trakki.MixProject do
   defp escript do
     [main_module: Trakki.CLI]
   end
-
-
 end
-
