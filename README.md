@@ -68,12 +68,15 @@ The rules concerning columns for description and lines between slots can be enfo
             mixed up.
 
 07:00-08:00 got the kids dressed and made breakfast                      [01:00]
-08:00-11:00 did so manythings . . . I can't even remember what I did. I  [03:00]
+08:00-11:00 did so many things . . . I can't even remember what I did. I [03:00]
             got the kids to the kindergarden. Except it's summer and 
             there is no kindergarden. So I am not sure WHAT I did. But
             it was soooooooo much.
 11:00-12:30 made lunch. Fed the kids.                                    [01:30]
 12:30-13:00 took a nap                                                   [00:30]
+
+== 19/08/10 Sat ========================================================  00:20
+10:00-10:20 got packed for the swimming lake                             [00:20]
 ```
 
 ## Commands
