@@ -39,6 +39,8 @@ Every day can have multiple tracking entries in the following format:
 `hh:mm-hh:mm description            [hh:mm]` where first two times mark the 
 start and end of the slot, followed by a description of what was done in that slot. The line ends with an (optional) duration of this slot in square brackets (usually ending on column 80. 
 
+If the last slot of the current (or previous) day only consist of the start time (thus looking like this: `hh:mm-`) it is considered to be the current spot. Other such entries on other days are ignored but might emit warnings.
+
 The times at the beginning and the duration at the end of each slot line effectively leaves 60 characters (columns 13-72) for the description. Longer descriptions can be spread over consecutive lines but should also stay within these columns. The times and the duration always stay on the first line.
 
 If a description starts with two starts `**` the slot is considered to be not trackable (like supper breaks). The duration is in normal brakets instead curley brakets and is not added to the daily sum of durations.
@@ -80,6 +82,7 @@ The rules concerning columns for description and lines between slots can be enfo
 
 == 19/08/10 Sat ========================================================  00:20
 10:00-10:20 got packed for the swimming lake                             [00:20]
+10:20-
 ```
 
 ## Commands
