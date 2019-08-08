@@ -41,10 +41,11 @@ start and end of the slot, followed by a description of what was done in that sl
 
 The times at the beginning and the duration at the end of each slot line effectively leaves 60 characters (columns 13-72) for the description. Longer descriptions can be spread over consecutive lines but should also stay within these columns. The times and the duration always stay on the first line.
 
+If a description starts with two starts `**` the slot is considered to be not trackable (like supper breaks). The duration is in normal brakets instead curley brakets and is not added to the daily sum of durations.
+
 Subsequent slots (end- and start-times match exactly) should not have an empty line between them while slots with dead time in between should.
 
-Slots that overlap should be separated by a single line starting with an 
-exclamation mark.
+Slots that overlap should be separated by a single line starting with at least 3 exclamation marks
 
 If the end time of a slot is before its start time, the slot is considered to 
 span over midnight (as of writing all the time is added to the track duration
@@ -57,13 +58,15 @@ The rules concerning columns for description and lines between slots can be enfo
 ### Example
 
 ```
-== 19/08/08 Thu ========================================================  03:40
-08:00-10:00 thinking about stuff                                         [02:00]
+== 19/08/08 Thu ========================================================  02:40
+08:00-09:00 thinking about stuff                                         [01:00]
+09:00-17:00 ** just worked. Nothing important                            (08:00)
+
 23:10-00:50 editing the README                                           [01:40]
 
 == 19/08/09 Fri ========================================================  06:25
 06:00-06:10 waking up feeling fine                                       [00:10]
-!
+!!!
 06:05-06:20 actually got woken by the kids. My timetracking got all      [00:15]
             mixed up.
 
