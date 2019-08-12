@@ -39,7 +39,7 @@ Every day can have multiple tracking entries in the following format:
 `hh:mm-hh:mm description            [hh:mm]` where first two times mark the 
 start and end of the slot, followed by a description of what was done in that slot. The line ends with an (optional) duration of this slot in square brackets (usually ending on column 80. 
 
-If the last slot of the current (or previous) day only consist of the start time (thus looking like this: `hh:mm-`) it is considered to be the current spot. Other such entries on other days are ignored but might emit warnings.
+If the last slot of the current (or previous) day only consist of the start time (thus looking like this: `hh:mm-`) it is considered to be the current slot. Other such entries on other days are ignored but might emit warnings.
 
 The times at the beginning and the duration at the end of each slot line effectively leaves 60 characters (columns 13-72) for the description. Longer descriptions can be spread over consecutive lines but should also stay within these columns. The times and the duration always stay on the first line.
 
